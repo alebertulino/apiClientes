@@ -2,7 +2,7 @@ import pymysql
 from app import app
 from config import mysql, auth
 from flask import jsonify, Response
-from flask import flash, request
+from flask import request
 from contextlib import closing
 
 basic_auth = auth
@@ -151,4 +151,4 @@ def not_found(error=None):
 
 if __name__ == "__main__":
     app.debug = True
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=80)
